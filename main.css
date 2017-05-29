@@ -1,0 +1,182 @@
+body{
+	margin:0;
+}
+
+.wrapper{
+	width: 80%;
+    margin:0 auto;
+    padding: 0 10px;
+}
+
+.logo{
+	background-image: url(images/Resto.png);
+    background-repeat: no-repeat;
+	float: left;
+    text-indent: -10000px;
+    width: 40%; /* if not set, then can't see image after setting text-indent */
+   
+
+}
+
+nav{
+    float: right; /* menus will get down if window reduced */
+}
+
+nav ul li{
+    
+    margin: 10px 20px;
+    float: left;
+    list-style-type: none;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+#main-banner img{
+    width: 100%;
+    border-bottom: 6px solid #f34949;
+}
+
+#home_menu{
+   
+    
+}
+
+#home_menu h2{
+     background-image: url(images/menu.png);
+    background-repeat: no-repeat;
+    text-indent: -10000px;
+    margin: -5px auto;
+    position: relative;
+    width: 156px;
+    height: 74px;
+}
+
+
+#home_menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#home_menu li{
+    float: left;
+    width: 42%;
+    padding: 0;
+    margin: 20px 0 20px 8%;
+    
+}
+
+#home_menu li:nth-child(odd){
+    margin:20px 8% 20px 0;
+}
+
+.dish{
+font-weight: bold;
+    color: #555;
+    
+    /* Adjustment for line  */
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-right: 5px;
+    
+}
+
+.price{
+    font-weight: bold;
+    float: right;
+    color: #555;
+     /* Adjustment for line  */
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-left: 15px;
+}
+.description{
+    font-style: italic;
+    
+    color: #999;
+    clear: both;
+    /* Make down  */
+    display: block;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    top: -8px;
+}
+
+/* The below code helps to seperate the ul in home_menu with fetaured section */
+#home_menu ul:after{
+    content: "";
+        clear:both;
+    display: block;
+}
+
+
+#featured ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#featured li{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    
+}
+
+#featured li img{
+    width: 100%; /* This makes to see the full size view of image in all canvas*/
+    margin-bottom: 10px;
+}
+#featured ul li a{
+    text-decoration: none;
+    color: #333;
+}
+#featured .food_price{
+    float: right;
+    padding-right: 5px;
+}
+#featured .rating{
+    display: block;
+    background-image: url(images/star.png);
+    background-repeat: no-repeat;
+    text-indent: -10000px;
+}
+
+#featured ul:after{
+    content: "";
+        clear:both;
+    display: block;
+}
+
+footer{
+    padding-left: 10%;
+    background: #3b3b3b;
+}
+footer:after{
+    content: "";
+        clear:both;
+    display: block;
+}
+footer ul{
+    list-style-type: none;
+     width: 18%;
+    padding: 0;
+   float: left;
+margin-right: 6%;
+    color: #eee;
+    
+}
+footer ul li{
+  margin: 10px 0;
+}
+
+footer a{
+    color: #eee;
+    text-decoration: none;
+}
